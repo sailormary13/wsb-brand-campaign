@@ -13,11 +13,6 @@ img {
     height: auto;
 }
 
-.main {
-    max-width: 1100px;
-    margin: auto;
-}
-
 .background-yellow-test {
     background-image: url("images/BrandCampaign-LandingPage-YellowGraphicLeft-new.svg");
     background-position: top 0 left 0;
