@@ -1,4 +1,3 @@
-
 html {
     overflow-x: hidden;
 }
@@ -195,10 +194,24 @@ Misc
     margin-right: calc(50% - 50vw);
     max-width: 100vw;
     width: 100vw;
-    background-image: url("images/sean-oulashin-KMn4VEeEPR8-unsplash.jpg");
-    max-height: 680px;
+    background-image: url("https://mary-wisc-business.pantheonsite.io/wp-content/uploads/2021/12/BrandCampaign-LandingPage-HeroB.jpg");
+    background-size: cover;
+    background-position: center;
+    height: 900px;
     overflow: hidden;
     position: relative;
+}
+
+@media only screen and (max-width: 1600px) {
+    .brand-hero {
+        height: 700px;
+    }
+}
+
+@media only screen and (max-width: 760px) {
+    .brand-hero {
+        height: 500px;
+    }
 }
 
 .brand-hero h1 {
@@ -217,15 +230,16 @@ Misc
 
 @media only screen and (min-width: 768px) {
     .brand-hero h1 {
-        font-size: 7rem;
+        font-size: 7.5rem;
         margin-right: -30rem;
     }
 }
 
 .brand-script-text-container {
     background-color: #efefef;
-    background-image: url("https://mary-wisc-business.pantheonsite.io/wp-content/uploads/2021/12/BrandLandingPage-PatternRow-v3.svg");
+    background-image:url("https://mary-wisc-business.pantheonsite.io/wp-content/uploads/2021/12/BrandLandingPage-PatternRow.svg");
     background-size: cover;
+    background-position: center;
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
     max-width: 100vw;
@@ -266,6 +280,62 @@ Misc
     }
 }
 
+.brand-cta-section {
+    background-image:url("https://mary-wisc-business.pantheonsite.io/wp-content/uploads/2021/12/BrandLandingPage-PatternRow.svg");
+    background-color: #efefef;
+    background-size: cover;
+    background-position: center;
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    max-width: 100vw;
+    width: 100vw;
+    padding: 5rem 4rem;
+    text-align: center;
+}
+
+.brand-play-button {
+    z-index: 21;
+    position: absolute;
+    top: 31%;
+    left: 37%;
+    width: 90px;
+}
+
+.brand-play-button:hover {
+    filter: brightness(.95);
+}
+
+@media only screen and (min-width: 450px) {
+    .brand-play-button {
+        width: 105px;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .brand-play-button {
+        width: 160px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .brand-play-button {
+        width: 110px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .brand-play-button {
+        width: 140px;
+    }
+}
+
+@media only screen and (min-width: 1400px) {
+    .brand-play-button {
+        width: 160px;
+    }
+}
+
+
 /* *********************
 Typography styles 
 ********************** */
@@ -275,6 +345,13 @@ Typography styles
     line-height: 1.2;
     font-family: abril-text, serif;
     font-style: italic;
+    font-weight: 700;
+}
+
+.brand-cta-section h2 {
+    color: #9B0000;
+    font-size: 2.4rem;
+    line-height: 1.2;
     font-weight: 700;
 }
 
@@ -348,8 +425,21 @@ a.brand-story-link {
 .script-text-special {
     font-family: acumin-pro, sans-serif;
     display: block;
+    font-style: italic;
     font-weight: 900;
     text-transform: uppercase;
 }
 
+.cta-section-text-big {
+    display: block;
+    font-style: italic;
+    font-weight: 900;
+    text-transform: uppercase;
+    font-size: 3rem;
+}
 
+@media only screen and (min-width: 576px) {
+    .cta-section-text-big {
+        font-size: 5.3rem;
+    }
+}
