@@ -1,0 +1,100 @@
+<!-- Script Text Animation -->
+<script>
+    const scriptTexts = document.querySelectorAll('.script-text');
+    
+    
+    
+    const options = {
+    root: null,
+    threshold: 0.5,
+    rootMargin: "-50px"
+    };
+    
+    
+    
+    const observer = new IntersectionObserver(function(entries, observer) {
+    entries.forEach(entry => {
+    if(!entry.isIntersecting) {
+    return;
+    };
+    console.log(entry.target);
+    entry.target.classList.toggle('fadeIn');
+    observer.unobserve(entry.target);
+    });
+    } , options);
+    
+    
+    
+    scriptTexts.forEach(scriptText => {
+    observer.observe(scriptText);
+    });
+    
+    
+    
+</script>
+
+
+<!-- Modal Pause/Play -->
+<script>
+
+// Sennai Modal
+var sennaiModal = document.getElementById('sennaiModal')
+var sennaiVideo= document.getElementById('sennaiVideo')
+sennaiModal.addEventListener('hidden.bs.modal', function (event) {
+    sennaiVideo.pause();
+})
+sennaiModal.addEventListener('shown.bs.modal', function (event) {
+    sennaiVideo.play();
+})
+
+// Reena Modal
+var reenaModal = document.getElementById('reenaModal')
+var reenaVideo= document.getElementById('reenaVideo')
+reenaModal.addEventListener('hidden.bs.modal', function (event) {
+    reenaVideo.pause();
+})
+reenaModal.addEventListener('shown.bs.modal', function (event) {
+    reenaVideo.play();
+})
+
+// Jake Modal
+var jakeModal = document.getElementById('jakeModal')
+var jakeVideo= document.getElementById('jakeVideo')
+jakeModal.addEventListener('hidden.bs.modal', function (event) {
+    jakeVideo.pause();
+})
+jakeModal.addEventListener('shown.bs.modal', function (event) {
+    jakeVideo.play();
+})
+
+// Kyle Modal
+var kyleModal = document.getElementById('kyleModal')
+var kyleVideo= document.getElementById('kyleVideo')
+kyleModal.addEventListener('hidden.bs.modal', function (event) {
+    kyleVideo.pause();
+})
+kyleModal.addEventListener('shown.bs.modal', function (event) {
+    kyleVideo.play();
+})
+
+// Cynthia Modal
+var cynthiaModal = document.getElementById('cynthiaModal')
+var cynthiaVideo= document.getElementById('cynthiaVideo')
+cynthiaModal.addEventListener('hidden.bs.modal', function (event) {
+    cynthiaVideo.pause();
+})
+cynthiaModal.addEventListener('shown.bs.modal', function (event) {
+    cynthiaVideo.play();
+})
+
+// Jim Modal
+var jimModal = document.getElementById('jimModal')
+var jimVideo= document.getElementById('jimVideo')
+jimModal.addEventListener('hidden.bs.modal', function (event) {
+    jimVideo.pause();
+})
+jimModal.addEventListener('shown.bs.modal', function (event) {
+    jimVideo.play();
+})
+ 
+</script>
