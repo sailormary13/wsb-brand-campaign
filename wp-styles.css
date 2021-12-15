@@ -194,7 +194,7 @@ Misc
     margin-right: calc(50% - 50vw);
     max-width: 100vw;
     width: 100vw;
-    background-color: #FFD946;
+    background-color: #4e66ad;
     background-image: url("https://business.wisc.edu/wp-content/uploads/2021/12/BrandCampaign-LandingPage-HeroB-v2-tiny-png.jpg");
     background-size: cover;
     background-position: center;
@@ -221,12 +221,18 @@ Misc
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 4rem;
+    font-size: 3rem;
     font-style: italic;
     font-weight: 800;
     color: #fff;
     text-transform: uppercase;
     text-align: center;
+}
+
+@media only screen and (min-width: 321px) {
+    .brand-hero h1 {
+        font-size: 4rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -245,8 +251,14 @@ Misc
     margin-right: calc(50% - 50vw);
     max-width: 100vw;
     width: 100vw;
-    padding: 4rem;
+    padding: 4rem 3rem;
     text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .brand-script-text-container {
+        padding: 4rem;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -259,12 +271,6 @@ Misc
     background-color: #fff;
 }
 
-@media only screen and (min-width: 768px) {
-    .brand-script-text-container {
-        padding: 6rem;
-    }
-}
-
 .brand-alum-text-container {
     padding: 3rem;
 }
@@ -275,9 +281,39 @@ Misc
     }
 }
 
-@media only screen and (min-width: 1190px) {
+@media only screen and (min-width: 1000px) {
+    .brand-alum-text-container {
+        padding: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 1160px) {
+    .brand-alum-text-container {
+        padding: 4rem;
+    }
+}
+
+@media only screen and (min-width: 1250px) {
     .brand-alum-text-container {
         padding: 5rem;
+    }
+}
+
+@media only screen and (min-width: 1350px) {
+    .brand-alum-text-container {
+        padding: 4.2rem;
+    }
+}
+
+@media only screen and (min-width: 1600px) {
+    .brand-alum-text-container {
+        padding: 4.8rem;
+    }
+}
+
+@media only screen and (min-width: 1900px) {
+    .brand-alum-text-container {
+        padding: 5.2rem;
     }
 }
 
@@ -290,15 +326,21 @@ Misc
     margin-right: calc(50% - 50vw);
     max-width: 100vw;
     width: 100vw;
-    padding: 5rem 4rem;
+    padding: 4rem 3rem;
     text-align: center;
+}
+
+@media only screen and (min-width: 576px) {
+    .brand-cta-section {
+        padding: 5rem 4rem;
+    }
 }
 
 .brand-play-button {
     z-index: 21;
     position: absolute;
-    top: 31%;
-    left: 37%;
+    top: 30%;
+    left: 36%;
     width: 90px;
     transition: filter 0.3s ease;
     cursor: pointer;
@@ -306,6 +348,13 @@ Misc
 
 .brand-play-button:hover {
     filter: brightness(.93);
+}
+
+@media only screen and (min-width: 321px) {
+    .brand-play-button {
+        top: 34%;
+        left: 37%;
+    }
 }
 
 @media only screen and (min-width: 450px) {
@@ -317,6 +366,7 @@ Misc
 @media only screen and (min-width: 576px) {
     .brand-play-button {
         width: 160px;
+        top: 32%;
     }
 }
 
@@ -335,6 +385,13 @@ Misc
 @media only screen and (min-width: 1400px) {
     .brand-play-button {
         width: 160px;
+        left: 38%;
+    }
+}
+
+@media only screen and (min-width: 2000px) {
+    .brand-play-button {
+        width: 200px;
     }
 }
 
@@ -344,18 +401,37 @@ Typography styles
 ********************** */
 .brand-script-text-container h2 {
     color: #9B0000;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.2;
     font-family: abril-text, serif;
     font-style: italic;
     font-weight: 700;
+    margin-bottom: 0 !important;
+}
+
+@media only screen and (min-width: 321px) {
+    .brand-script-text-container h2 {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (min-width: 576px) {
+    .brand-script-text-container h2 {
+        font-size: 2.4rem;
+    }
 }
 
 .brand-cta-section h2 {
     color: #9B0000;
-    font-size: 2.4rem;
+    font-size: 2rem;
     line-height: 1.2;
     font-weight: 700;
+}
+
+@media only screen and (min-width: 576px) {
+    .brand-cta-section h2 {
+        font-size: 2.4rem;
+    }
 }
 
 .brand-quote {
@@ -367,7 +443,7 @@ Typography styles
     max-width: 560px;
 }
 
-@media only screen and (min-width: 768px) and (max-width: 890px) {
+@media only screen and (min-width: 768px) and (max-width: 927px) {
     .brand-quote {
         font-size: 1.2rem;
     }
