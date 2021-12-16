@@ -1,16 +1,12 @@
 <!-- Script Text Animation -->
 <script>
-    const scriptTexts = document.querySelectorAll('.script-text');
-    
-    
+    const scriptTexts = document.querySelectorAll('.script-text-animation');
     
     const options = {
     root: null,
     threshold: 0.5,
     rootMargin: "-50px"
     };
-    
-    
     
     const observer = new IntersectionObserver(function(entries, observer) {
     entries.forEach(entry => {
@@ -23,15 +19,14 @@
     });
     } , options);
     
-    
-    
     scriptTexts.forEach(scriptText => {
     observer.observe(scriptText);
     });
     
     
     
-</script>
+</script>  
+    
 
 
 <!-- Modal Pause/Play -->
@@ -95,6 +90,16 @@ jimModal.addEventListener('hidden.bs.modal', function (event) {
 })
 jimModal.addEventListener('shown.bs.modal', function (event) {
     jimVideo.play();
+})
+
+// Compilation Modal
+var compilationModal = document.getElementById('compilationModal')
+var compilationVideo= document.getElementById('compilationVideo')
+compilationModal.addEventListener('hidden.bs.modal', function (event) {
+    compilationVideo.pause();
+})
+compilationModal.addEventListener('shown.bs.modal', function (event) {
+    compilationVideo.play();
 })
  
 </script>

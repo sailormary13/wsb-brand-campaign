@@ -395,6 +395,16 @@ Misc
     }
 }
 
+.compilation-video-container {
+    max-width: 800px;
+}
+
+@media only screen and (min-width: 2000px) {
+    .compilation-video-container {
+        max-width: 1200px;
+    }
+}
+
 
 /* *********************
 Typography styles 
@@ -526,10 +536,10 @@ a.brand-story-link {
 /* *********************
 Text Animation styles
 ********************** */
-.script-text {
+.script-text-animation {
     opacity: 0;
     transform: translateY(50px);
-    transition: transform 1.3s, opacity 1.2s;
+    transition: transform 1.2s, opacity 1.2s;
 }
     
     
