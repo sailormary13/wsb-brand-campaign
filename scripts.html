@@ -42,6 +42,16 @@ sennaiModal.addEventListener('shown.bs.modal', function (event) {
     sennaiVideo.play();
 })
 
+sennaiVideo.addEventListener('loadeddata', (e) => {
+    if(sennaiVideo.readyState >= 3){
+        //play button visible
+        var buttonsennai= document.getElementById("sennaiButton");
+        buttonsennai.style.display = "block";
+        //enable input image (modal trigger)
+        document.getElementById("sennaiInput").disabled = false;
+    }
+})
+
 // Reena Modal
 var reenaModal = document.getElementById('reenaModal')
 var reenaVideo= document.getElementById('reenaVideo')
@@ -50,6 +60,16 @@ reenaModal.addEventListener('hidden.bs.modal', function (event) {
 })
 reenaModal.addEventListener('shown.bs.modal', function (event) {
     reenaVideo.play();
+})
+
+reenaVideo.addEventListener('loadeddata', (e) => {
+    if(reenaVideo.readyState >= 3){
+        //play button visible
+        var buttonreena= document.getElementById("reenaButton");
+        buttonreena.style.display = "block";
+        //enable input image (modal trigger)
+        document.getElementById("reenaInput").disabled = false;
+    }
 })
 
 // Jake Modal
@@ -62,6 +82,16 @@ jakeModal.addEventListener('shown.bs.modal', function (event) {
     jakeVideo.play();
 })
 
+jakeVideo.addEventListener('loadeddata', (e) => {
+    if(jakeVideo.readyState >= 3){
+        //play button visible
+        var buttonjake= document.getElementById("jakeButton");
+        buttonjake.style.display = "block";
+        //enable input image (modal trigger)
+        document.getElementById("jakeInput").disabled = false;
+    }
+})
+
 // Kyle Modal
 var kyleModal = document.getElementById('kyleModal')
 var kyleVideo= document.getElementById('kyleVideo')
@@ -70,6 +100,16 @@ kyleModal.addEventListener('hidden.bs.modal', function (event) {
 })
 kyleModal.addEventListener('shown.bs.modal', function (event) {
     kyleVideo.play();
+})
+
+kyleVideo.addEventListener('loadeddata', (e) => {
+    if(kyleVideo.readyState >= 3){
+        //play button visible
+        var buttonkyle= document.getElementById("kyleButton");
+        buttonkyle.style.display = "block";
+        //enable input image (modal trigger)
+        document.getElementById("kyleInput").disabled = false;
+    }
 })
 
 // Cynthia Modal
@@ -82,6 +122,16 @@ cynthiaModal.addEventListener('shown.bs.modal', function (event) {
     cynthiaVideo.play();
 })
 
+cynthiaVideo.addEventListener('loadeddata', (e) => {
+    if(cynthiaVideo.readyState >= 3){
+        //play button visible
+        var buttoncynthia= document.getElementById("cynthiaButton");
+        buttoncynthia.style.display = "block";
+        //enable input image (modal trigger)
+        document.getElementById("cynthiaInput").disabled = false;
+    }
+})
+
 // Jim Modal
 var jimModal = document.getElementById('jimModal')
 var jimVideo= document.getElementById('jimVideo')
@@ -92,6 +142,16 @@ jimModal.addEventListener('shown.bs.modal', function (event) {
     jimVideo.play();
 })
 
+jimVideo.addEventListener('loadeddata', (e) => {
+    if(jimVideo.readyState >= 3){
+        //play button visible
+        var buttonjim= document.getElementById("jimButton");
+        buttonjim.style.display = "block";
+        //enable input image (modal trigger)
+        document.getElementById("jimInput").disabled = false;
+    }
+})
+
 // Compilation Modal
 var compilationModal = document.getElementById('compilationModal')
 var compilationVideo= document.getElementById('compilationVideo')
@@ -100,6 +160,16 @@ compilationModal.addEventListener('hidden.bs.modal', function (event) {
 })
 compilationModal.addEventListener('shown.bs.modal', function (event) {
     compilationVideo.play();
+})
+
+compilationVideo.addEventListener('loadeddata', (e) => {
+    if(compilationVideo.readyState >= 3){
+        //play button visible
+        var buttoncompilation= document.getElementById("compilationButton");
+        buttoncompilation.style.display = "block";
+        //enable input image (modal trigger)
+        document.getElementById("compilationInput").disabled = false;
+    }
 })
  
 </script>
