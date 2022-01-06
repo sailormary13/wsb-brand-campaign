@@ -32,6 +32,18 @@
 <!-- Modal Pause/Play -->
 <script>
 
+//checks if user is on iphone or ipad, and enables buttons/images because videos load differently on iOS
+var ua = navigator.userAgent;
+if(/iphone/i.test(ua)||/ipad/i.test(ua)){
+    var playButtons = document.getElementsByClassName("brand-play-button");
+    var inputImages = document.getElementsByClassName("modal-trigger");
+
+    for (let i = 0; i < playButtons.length; i++) {
+    playButtons[i].style.display = "block";
+    inputImages[i].disabled = false;
+    }
+}
+
 // Sennai Modal
 var sennaiModal = document.getElementById('sennaiModal')
 var sennaiVideo= document.getElementById('sennaiVideo')
