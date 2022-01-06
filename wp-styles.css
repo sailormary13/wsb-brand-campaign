@@ -254,17 +254,19 @@ Misc
 @media only screen and (max-width: 1600px) {
     .brand-hero {
         height: 700px;
+        background-image: url("https://business.wisc.edu/wp-content/uploads/2021/12/BrandCampaign-LandingPage-HeroB-v2-tiny-png-1536x1024.jpg");
     }
 }
 
 @media only screen and (max-width: 760px) {
     .brand-hero {
         height: 500px;
+        background-image: url("https://business.wisc.edu/wp-content/uploads/2021/12/BrandCampaign-LandingPage-HeroB-v2-tiny-png-768x512.jpg");
     }
 }
 
 .brand-hero h1 {
-    z-index: 20;
+    z-index: .5;
     position: absolute;
     top: 50%;
     left: 50%;
